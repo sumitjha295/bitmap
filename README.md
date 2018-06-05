@@ -20,7 +20,7 @@ image format.
 Compatible
 + Linux
 + OSX
-+ Currently working on (not compiled so far)
++ Windows (not compiled so far)
 
 ```c++
 #include "bitmap.h"
