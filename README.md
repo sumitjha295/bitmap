@@ -2,19 +2,25 @@
 The C++ Bitmap Library for **8-bit per pixel** bitmap
 image format.
 
-
-
 #### Capabilities
 + Read/Write 8-bit Bitmap Images
 + Apply grayscale
 + Apple 3*3 filter on images
 + Apple threshold on images (between 0 and 1)
 
+```c++
+    explicit BitMap(const std::string& filename); //loading
+    void save(const std::string& filename); //saving
+    void applyThreshold(const float &threshold); // threshold
+    void applyGreyScale(); // greyscale
+    void applyFilter(const std::vector<int> &filter); // applyfilter 3x3
+    void applyFilterFromFile(const std::string& filename); // from file.
+```
+
 Compatible
 + Linux
 + OSX
 + Currently working on (not compiled so far)
-
 
 ```c++
 #include "bitmap.h"
@@ -22,8 +28,6 @@ Compatible
 
 int main(int argc, char *argv[])
 {
-
-
     std::cout << argc << "\n";
     bool run = (argc > 1);
     if(!run)
