@@ -5,8 +5,8 @@ image format.
 #### Capabilities
 + Read/Write 8-bit Bitmap Images
 + Apply grayscale
-+ Apple 3*3 filter on images
-+ Apple threshold on images (between 0 and 1)
++ Apply 3*3 filter on images
++ Apply threshold on images (between 0 and 1)
 
 ```c++
     explicit BitMap(const std::string& filename); //loading
