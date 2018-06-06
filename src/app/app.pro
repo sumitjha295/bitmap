@@ -1,7 +1,7 @@
 QT += core
 QT -= gui
 
-TARGET = BMP_Filter
+TARGET = bmp_filter
 CONFIG += console
 CONFIG -= app_bundle
 CONFIG += c++11
